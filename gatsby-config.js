@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `ひつじ小屋の日常`,
     author: `k3nt`,
-    description: `k3ntの個人ブログ。`,
+    description: `k3ntの個人ブログ`,
     siteUrl: `https://archived.catnose.me`,
     social: {
       twitter: `k3ntrr`,
