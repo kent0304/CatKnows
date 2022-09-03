@@ -102,14 +102,14 @@ class BlogPostTemplate extends React.Component {
           categorySlug={category}
         />
         <Content>
-          <HeroImage
+          {/* <HeroImage
             dangerouslySetInnerHTML={{
               __html: twemoji.parse(emoji || "😺", {
                 folder: "svg",
                 ext: ".svg",
               }),
             }}
-          />
+          /> */}
           <ContentMain>
             <PostDate>{date}</PostDate>
             <PostTitle>{title}</PostTitle>

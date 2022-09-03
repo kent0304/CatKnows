@@ -58,7 +58,7 @@ const CategoryItem = styled.li`
   }
   .cat-item__name {
     margin-top: 5px;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.5px;
     color: ${(props) => props.theme.colors.gray};
@@ -97,9 +97,9 @@ const CategoryLink = ({ catName, catIcon, catLink, path }) => {
   return (
     <CategoryItem className={catLink === path && "active"}>
       <Link to={catLink} className="cat-item__link">
-        <div className="cat-item__image">
+        {/* <div className="cat-item__image">
           <img src={catIcon} alt={catName} />
-        </div>
+        </div> */}
         <div className="cat-item__name">{catName}</div>
       </Link>
     </CategoryItem>
@@ -111,11 +111,11 @@ const CategoryMenu = ({ location }) => {
   return (
     <Nav>
       <CategoryItemList>
-        <CategoryLink catName="New" catIcon={svgNew} catLink="/" path={path} />
+        <CategoryLink catName="All" catIcon={svgNew} catLink="/" path={path} />
         <CategoryLink
-          catName="Design"
+          catName="ML"
           catIcon={svgDesign}
-          catLink="/category/design"
+          catLink="/category/ml"
           path={path}
         />
         <CategoryLink
@@ -128,12 +128,6 @@ const CategoryMenu = ({ location }) => {
           catName="Self"
           catIcon={svgSelf}
           catLink="/category/self"
-          path={path}
-        />
-        <CategoryLink
-          catName="Collect"
-          catIcon={svgCollection}
-          catLink="/category/collect"
           path={path}
         />
       </CategoryItemList>

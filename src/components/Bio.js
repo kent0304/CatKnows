@@ -2,10 +2,9 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
 
-import svgAvatar from "../svg/avatar.svg";
+import imgAvatar from "../constants/kent.jpg";
 import svgTwitter from "../svg/socials/twitter.svg";
-import svgResume from "../svg/socials/resume.svg";
-import svgEmail from "../svg/socials/email.svg";
+import svgUser from "../svg/socials/user.svg";
 
 const BioWrapper = styled.div`
   position: sticky;
@@ -88,29 +87,27 @@ const Bio = () => {
         return (
           <BioWrapper>
             <BioHeader>
-              <AvatarImage src={svgAvatar} alt={author} />
+              <AvatarImage src={imgAvatar} alt={author} />
               <BioName>
                 <a href={`https://twitter.com/${social.twitter}`}>{author}</a>
               </BioName>
             </BioHeader>
             <BioMain>
               <BioText>
-                デザイナー/フロントエンドエンジニア。自分のペースでWebサービスやWebサイトを作っています。詳しくはRESUMEをどうぞ。
+                MLエンジニア。教育系のサービスを作っています。
               </BioText>
               <BioLinks>
-                <BioLink href="https://www.resume.id/catnose99">
-                  <img src={svgResume} alt="RESUME" />
-                  <div>RESUME</div>
+                <BioLink href="https://kent34.netlify.app/">
+    
+                  <div>Portfolio</div>
                 </BioLink>
                 <BioLink
                   className="bio-link--email"
-                  href="mailto:catnose99@gmail.com"
+                  href="https://github.com/kent0304"
                 >
-                  <img src={svgEmail} alt="" />
-                  <div>E-mail</div>
+                  <div>GitHub</div>
                 </BioLink>
-                <BioLink href="https://twitter.com/catnose99">
-                  <img src={svgTwitter} alt="Twitter" />
+                <BioLink href="https://twitter.com/k3ntrr">
                   <div>Twitter</div>
                 </BioLink>
               </BioLinks>

@@ -40,7 +40,7 @@ const PostCardEmoji = styled.p`
   }
 `;
 const PostCardContent = styled.div`
-  width: calc(100% - 90px);
+  width: 100%;
   padding-left: 20px;
   h3 {
     font-size: 1.5em;
@@ -55,7 +55,7 @@ const PostCardContent = styled.div`
     color: ${(props) => props.theme.colors.gray};
   }
   @media screen and (max-width: ${(props) => props.theme.responsive.large}) {
-    width: calc(100% - 70px);
+    width: 100%;
     padding-left: 15px;
     h3 {
       font-size: 16.5px;
@@ -76,7 +76,7 @@ const PostCard = ({ node }) => {
   return (
     <PostCardWrapper>
       <Link to={node.fields.slug} className="post-card-link">
-        <PostCardEmoji dangerouslySetInnerHTML={{ __html: emoji }} />
+        {/* <PostCardEmoji dangerouslySetInnerHTML={{ __html: emoji }} /> */}
         <PostCardContent>
           <h3>{title}</h3>
           <time>{node.frontmatter.date}</time>

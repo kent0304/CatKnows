@@ -25,6 +25,12 @@ const HeaderInner = styled.div`
   .logo-link {
     display: block;
   }
+  .site-title {
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 8px;
+  }
   .message-link {
     position: absolute;
     right: 0;
@@ -47,13 +53,16 @@ const Header = ({ title, location }) => {
         <HeaderInner>
           <HeadingLevel>
             <Link to={`/`} className="logo-link">
-              <img
+              <h1 className="site-title">
+                ひつじ小屋の日常
+              </h1>
+              {/* <img
                 className="logo"
                 src={svgLogo}
                 alt={title}
                 width={165}
                 height={37}
-              />
+              /> */}
             </Link>
           </HeadingLevel>
         </HeaderInner>

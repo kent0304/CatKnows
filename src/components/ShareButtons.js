@@ -82,12 +82,6 @@ const ShareButtons = ({ slug, title, emoji }) => {
           B!
         </ShareLink>
       </ShareLinks>
-      <GitHubLink
-        href={`https://github.com/catnose99/CatKnows/edit/master/content/blog${slug}index.md`}
-        rel="nofollow"
-      >
-        Edit on GitHub
-      </GitHubLink>
     </Wrapper>
   );
 };
