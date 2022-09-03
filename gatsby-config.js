@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Cat Knows`,
-    author: `CatNose`,
-    description: `CatNoseの個人ブログ。デザインやプログラミングの知見、生産性向上テクニックなどをストックしていきます。`,
+    title: `ひつじ小屋の日常`,
+    author: `k3nt`,
+    description: `k3ntの個人ブログ。`,
     siteUrl: `https://archived.catnose.me`,
     social: {
-      twitter: `catnose99`,
+      twitter: `k3ntrr`,
     },
     categories: [
       {
@@ -125,8 +125,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `CatKnows | CatNoseの個人ブログ`,
-        short_name: `CatKnows`,
+        name: `ひつじ小屋の日常`,
+        short_name: `ひつじ小屋の日常`,
         start_url: `/`,
         background_color: `rgb(33, 36, 45)`,
         theme_color: `#0c9ee4`,
