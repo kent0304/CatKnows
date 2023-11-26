@@ -1,11 +1,4 @@
-# ⚠️ This project has been archived. ⚠️
-
-<p>
-  Made with
-  <a href="https://github.com/gatsbyjs/gatsby">
-    Gatsby.js <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="20" style="vertical-align: middle;" />
-  </a>
-</p>
+# ひつじ小屋の日常
 
 ## Markdown
 
@@ -79,6 +72,6 @@ if(process.env.NODE_ENV === "production") {
 ```
 
 ### Licence
-MIT (except for images/icons/blog contents)
-
-You are not allowed to use or distribute images/icons/blogContents included in this project.
+Copyright (c) 2021 [@catnose](https://github.com/catnose99)
+Released under the MIT license
+https://opensource.org/license/mit/
